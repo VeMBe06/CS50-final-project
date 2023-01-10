@@ -1,0 +1,276 @@
+
+body {
+
+    /* Default theme = dark purple */
+   
+    /* padding: 2px; */ 
+    background-color: #220072;
+    color: #c9c2c2;
+    font-size: 15px;
+    
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #c9c2c2;
+}
+
+a:hover {
+color: #c9c2c2;
+text-decoration: none;
+cursor: pointer;
+}
+hr {
+    width: 30%;
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin: 15px;
+}
+
+/* NavBar personalization */
+.nav-item {
+    margin: 5px;
+}
+
+.foot {
+    display: grid;
+    grid-template-rows: 3;
+    align-items: center;
+}
+
+.btn-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #c9c2c2;
+    background-color: #351288;
+    border: 2px solid black;
+
+    margin: 5px;
+}
+
+.centrage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.bubble {
+    width: 18em; 
+    height: 18em; 
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #ececec;
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1;
+    place-items: center;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*  Animation: .breathe class is directly on the html (on layout.html)*/
+/* Keyframes for animation */
+@keyframes breathe1 {
+    /* Breathing profile 1: 1:2:2; 6s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 2s out + 1s hold down */
+    33.3%, 50% {
+        transform: scale(0.3);
+    }
+    /* 1s up + 2s hold up */
+    66.7%, 100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes breathe2 {
+    /* Breathing profile 2: 2:3:3; 9s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 2s out + 1s hold down */
+    33.3%, 44.4% {
+        transform: scale(0.3);
+    }
+    /* 1s up + 2s hold up */
+    66.7%, 100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes breathe3 {
+    /* Breathing profile 3: 5:3:5; 14s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 5s out + 1s hold down */
+    35.7%, 42.9% {
+        transform: scale(0.3);
+    }
+    /* 5s up + 3s hold up */
+    78.6%, 100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes breathe4 {
+    /* Breathing profile 4: 5:4:7; 17s tot */
+    /* start */
+    0% {
+        transform: scale(1.0) ;
+    }
+    /* 2s out + 1s hold down */
+    41.2%, 47.1% {
+        transform: scale(0.3);
+    }
+    /* 1s up + 2s hold up */
+    76.5%, 100% {
+        transform: scale(1.0);
+    }
+}
+
+
+
+/* StartStop button */
+#StartStop {
+    margin: 50px;    
+    padding: 10px;
+    border-radius: 25%;
+}
+
+#StartStop:hover {
+    background-color: #a3a3a3;
+    transition: 300ms ease-in-out;
+}
+
+#btn-param {
+    margin: 20px;
+}
+
+#VeMBe {
+    margin: 10px;
+}
+
+
+
+
+/* Themes */
+.dark-mode {
+    background-color: #121212;
+    color: #c9c2c2;
+}
+
+.dark-mode .btn {
+    color: #c9c2c2;
+    background-color: #2e2e2e;
+    border: 2px solid #353535;
+
+    margin: 5px;
+
+}
+
+.dark-mode .btn:hover {
+    background-color: #222222;
+    transition: 300ms ease-in-out;
+}
+
+.dark-mode .form-select {
+    color: #c9c2c2;
+    background-color: #2e2e2e;
+    border: 2px solid #353535;
+
+}
+
+.dark-mode #StartStop {
+    color: #c9c2c2;
+    background-color: #2e2e2e;
+
+}
+
+.dark-mode #StartStop:hover {
+    background-color: #222222;
+    transition: 300ms ease-in-out;
+
+}
+
+
+.night-mode {
+    background-color: #000;
+    color: #2b2b2b;
+}
+
+.night-mode .bubble {
+    border: 3px solid #2b2b2b;
+}
+
+
+.night-mode .btn {
+    color: #2b2b2b;
+    background-color: #000;
+    border: 2px solid #353535;
+
+    margin: 5px;
+
+}
+
+.night-mode .btn:hover {
+    background-color: #0c0c0c;
+    transition: 300ms ease-in-out;
+}
+
+.night-mode .form-select {
+    color: #2b2b2b;
+    background-color: #000;
+    border: 2px solid #353535;
+
+}
+
+.night-mode #StartStop {
+    color: #2b2b2b;
+    background-color: #000;
+    border: solid 2px #2b2b2b;
+
+}
+
+.night-mode #StartStop:hover {
+    background-color: #0c0c0c;
+    transition: 300ms ease-in-out;
+
+}

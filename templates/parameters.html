@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}Parameters{% endblock %}
+
+{% block main %}
+    <div id="explanation">
+        <h2>
+            How to read the breathing ratio:
+        </h2>
+    </div>
+    <div>
+        <p>Ratio (in seconds) = I : HI : O </p>
+        <ul>
+            <li>I = Breathe IN</li>
+            <li>HI = Hold IN</li>
+            <li>O = Breathe OUT</li>
+        </ul>
+    </div>
+    <form action="/parameters" method="post">
+        <select class="form-select mx-auto w-auto" name="profile">
+            <option disabled selected>Ratios</option>
+            <option value="profile1">1:2:2</option>
+            <option value="profile2">2:3:3</option>
+            <option value="profile3">5:3:5</option>
+            <option value="profile4">5:4:7</option>
+        </select>
+        <div>
+            <button class="btn" type="submit" id="btn-param">Save changes</button>
+        </div>
+    </form>
+{% endblock %}
